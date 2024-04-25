@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pong - Baran & Forgwen</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <a href="index.html">Game</a>
+        <a href="tutorial.html">Tutorial</a>
+      </div>
+      <div class="header-right">By Baran & Forgwen</div>
+    </header>
+    <div id="menu" class="menu">
+      <div class="background">
+        <button
+          class="difficulty-button"
+          id="Easy"
+          onclick="setDifficulty('Easy')"
+        >
+          Easy
+        </button>
+        <button
+          class="difficulty-button"
+          id="Medium"
+          onclick="setDifficulty('Medium')"
+        >
+          Medium
+        </button>
+        <button
+          class="difficulty-button"
+          id="Hard"
+          onclick="setDifficulty('Hard')"
+        >
+          Hard
+        </button>
+        <button
+          class="difficulty-button"
+          id="Impossible"
+          onclick="setDifficulty('Impossible')"
+        >
+          Impossible
+        </button>
+        <button id="start" onclick="startGame()" disabled>Start Game</button>
+      </div>
+    </div>
+    <div id="game" class="game" style="display: none">
+      <div class="paddle left"></div>
+      <div class="paddle right"></div>
+      <div class="ball"></div>
+      <div class="info">Press arrow up or down to move your paddle.</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
