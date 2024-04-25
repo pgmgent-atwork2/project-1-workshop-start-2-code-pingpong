@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pong - Baran & Forgwen</title>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
+  <body style="overflow: auto">
     <header>
       <div class="header-left">
         <a href="index.html">Game</a>
@@ -15,11 +15,129 @@
       <div class="header-right">By Baran & Forgwen</div>
     </header>
     <main>
-      <section class="tutorial-step">
+      <div class="tutorial-step">
         <h1>We gaan een ping pong game maken</h1>
-        <p>Net zoals de foto hieronder.</p>
+        <p>Net zoals de foto hieronder:</p>
         <img src="assets/img/game.png" alt="pong game" />
-      </section>
+      </div>
+      <div class="tutorial-step">
+        <h2>Daarvoor hebben we drie codetalen nodig</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="tutorial-step">
+        <h1>STAP 1 - MAPPENSTRUCTUUR</h1>
+        <h2>
+          We hebben een code-editor nodig. In de workshop gebruiken we
+          <a href="https://code.visualstudio.com/" target="_blank"
+            >Visual Studio Code.</a
+          >
+        </h2>
+        <ul>
+          <li>
+            <strong>1.1</strong> Download volgende bronbestanden, plaats deze op
+            je bureaublad of een andere map naar keuze en pak de zip-file
+            vervolgens uit
+            <br />
+            <a
+              class="button"
+              href="https://www.mediafire.com/file/w1gits934qdx13t/Bronbestanden+Pong.zip/file"
+              target="_blank"
+              >DOWNLOAD bronbestanden</a
+            >
+          </li>
+          <li>
+            <strong>1.2</strong> Open het programma Visual Studio Code. en open
+            de folder die je zopas aangemaakt hebt.
+          </li>
+          <li>
+            <strong>1.3</strong> De map- en bestandsstructuur ziet er zo uit:
+            <br />
+            <img src="assets/img/structuur.png" alt="MAPPENSTRUCTUUR" />
+          </li>
+          <li>
+            <strong>1.4</strong> Installeer de live server extensie in Visual
+            Studio Code.
+          </li>
+          <li>
+            <strong>1.5</strong> Start de live server door rechtsonder de blauwe
+            balk te klikken op Go Live Jouw standaard browser zal nu gestart
+            worden en je zal een blanco webpagina zien!
+          </li>
+        </ul>
+      </div>
+      <div class="tutorial-step">
+        <h1>STAP 2 - HTML & CSS</h1>
+        <ul>
+          <li>
+            <strong>2.1</strong> Kopieer onderstaande code in jouw
+            index.html-bestand. Bewaar vervolgens dat bestand.
+            <br />
+            <script
+              async
+              src="//jsfiddle.net/jx5abrqw/embed/html/dark/"
+            ></script>
+          </li>
+          <li>
+            <strong>2.2</strong> Kopieer onderstaande code in jouw
+            main.css-bestand. Bewaar vervolgens dat bestand.
+            <br />
+            <script
+              async
+              src="//jsfiddle.net/jx5abrqw/embed/css/dark/"
+            ></script>
+
+            <br />
+            De background image bij de klasse menu kanje zelf bepalen.
+          </li>
+        </ul>
+      </div>
+      <div class="tutorial-step">
+        <h1>STAP 3 - INTERACTIVITEIT MET JAVASCRIPT</h1>
+        <ul>
+          <li>
+            <strong>3.1</strong> Kopieer onderstaande code in jouw
+            app.js-bestand. Bewaar vervolgens dat bestand.
+            <br />
+            <script async src="//jsfiddle.net/jx5abrqw/embed/js/dark/"></script>
+          </li>
+          <li>
+            <strong>3.2</strong> Nu is jouw game eigenlijk al klaar, maar als je
+            de instellingen wilt aanpassen kan dat bij stap 4!.
+          </li>
+        </ul>
+      </div>
+      <div class="tutorial-step">
+        <h1>STAP 4 - INSTELLINGEN</h1>
+        <ul>
+          <li>
+            <strong>4.1</strong> Bij de settings variable in script.js, kan je
+            allerlei instellingen aanpassen
+          </li>
+          <li>
+            <strong>4.2</strong> Per niveau kan je de ball snelheid en de
+            paddlesnelheid (van de speler en Ai) aanpassen naar hoe het zelf
+            wilt.
+            <br />
+            <img src="assets/img/settings.png" alt="settings" />
+          </li>
+          <li>
+            <strong>4.3</strong>Bij de incrementBallSpeed functie kan je bepalen
+            met hoeveel de balsnelheid veranderd nadat het een paddle raakt.
+            <br />
+            <img src="assets/img/snelheid.png" alt="bal snelheid" />
+          </li>
+          <li>
+            <strong>4.3</strong>Bij de checkForWinner functie kan je de
+            hoeveelheid rondes aanpassen.
+            <br />
+            <img src="assets/img/rondes.png" alt="aantal rondes" />
+          </li>
+        </ul>
+      </div>
     </main>
   </body>
 </html>

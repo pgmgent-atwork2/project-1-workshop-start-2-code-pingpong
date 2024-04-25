@@ -48,7 +48,7 @@ header a:active {
 }
 
 .menu {
-  background-image: url("assets/img/pong-blur.jpg");
+  background-image: url("../assets/img/pong-blur.jpg");
   background-size: 100vw;
   display: flex;
   justify-content: center;
@@ -171,28 +171,56 @@ header a:active {
 
 .tutorial-step {
   margin-bottom: 20px;
-  padding: 15px;
+  padding: 20px;
+  background-color: #fff; /* Witte achtergrond voor elke stap */
   border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Consistentie in schaduw */
 }
 
+.tutorial-step h1,
 .tutorial-step h2 {
-  color: #ffd700;
+  color: #333; /* Donkere tekst voor titels */
 }
 
-.tutorial-step p {
+.tutorial-step p,
+.tutorial-step ul {
   font-size: 16px;
-  line-height: 1.6;
+  color: #666; /* Zachtere kleur voor tekst */
+  line-height: 1.6; /* Meer leesruimte */
 }
 
-a {
-  text-decoration: none;
-  color: white;
-  background-color: #444;
+.tutorial-step img {
+  max-width: 100%; /* Zorgt ervoor dat afbeeldingen responsive zijn */
+  height: auto;
+  margin-top: 20px; /* Ruimte boven afbeeldingen */
+}
+
+.tutorial-step ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.tutorial-step a.button {
   padding: 10px 15px;
+  background-color: #444;
+  color: white;
   border-radius: 5px;
-  transition: background-color 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
 }
 
-a:hover {
-  background-color: #555;
+.tutorial-step a.button:hover {
+  background-color: #555; /* Lichter bij hover */
+}
+
+@media (max-width: 768px) {
+  .header-left,
+  .header-right {
+    padding: 10px;
+  }
+
+  .tutorial-step {
+    padding: 15px;
+  }
 }
